@@ -57,7 +57,7 @@ function setBalance(expenses) {
     setElementValue("balance", balance);
 };
 
-//-----------------------------------------------
+//------------------------------------------------
 // calculation saving amount
 function setSavingAmount() {
     const income = getInputValue("income-field");
