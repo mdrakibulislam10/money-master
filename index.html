@@ -25,35 +25,43 @@
                 <div class="bg-orange-300 lg:w-3/4 lg:ml-auto">
                     <h3 class="text-center font-semibold text-2xl my-4">Income</h3>
                     <div class="flex flex-col">
-                        <p class="my-2 ml-auto mr-20">Income: <input class="p-2 rounded ml-2" type="text">
+                        <p class="my-2 ml-auto mr-20 font-semibold">Income: <input id="income-field"
+                                class="p-2 rounded ml-2" type="text">
                         </p>
                     </div>
 
                     <h3 class="text-center font-semibold text-2xl my-2">Expenses</h3>
                     <div class="flex flex-col">
-                        <p class="my-2 ml-auto mr-20">Food: <input class="p-2 rounded ml-2" type="text">
+                        <p class="my-2 ml-auto mr-20 font-semibold">Food: <input id="food-field"
+                                class="p-2 rounded ml-2" type="text">
                         </p>
-                        <p class="my-2 ml-auto mr-20">Rent: <input class="p-2 rounded ml-2" type="text">
+                        <p class="my-2 ml-auto mr-20 font-semibold">Rent: <input id="rent-field"
+                                class="p-2 rounded ml-2" type="text">
                         </p>
-                        <p class="my-2 ml-auto mr-20">Clothes: <input class="p-2 rounded ml-2" type="text"></p>
+                        <p class="my-2 ml-auto mr-20 font-semibold">Clothes: <input id="clothes-field"
+                                class="p-2 rounded ml-2" type="text"></p>
                     </div>
 
-                    <button
-                        class="bg-blue-600 text-white font-semibold rounded-sm py-2 px-10 block mx-auto my-4">Calculate</button>
+                    <button class="bg-blue-600 text-white font-semibold rounded-sm py-2 px-10 block mx-auto my-4"
+                        id="calculate-btn">Calculate</button>
 
-                    <h3 class="text-center font-semibold text-2xl my-4">Total Expenses: <span></span></h3>
-                    <h3 class="text-center font-semibold text-2xl my-4">Balance: <span></span></h3>
+                    <h3 class="text-center font-semibold text-2xl my-4">Total Expenses: <span
+                            id="total-expenses"></span></h3>
+                    <h3 class="text-center font-semibold text-2xl my-4">Balance: <span id="balance"></span></h3>
 
                     <div class="flex justify-center items-center gap-3">
-                        <p>Save:</p>
-                        <p class="bg-slate-300 py-2 px-10">20</p>
-                        <p>%</p>
-                        <button class="bg-blue-600 text-white font-semibold rounded-sm py-2 px-6">Calculate</button>
+                        <p class="font-semibold">Save:</p>
+                        <input type="text" class="rounded p-2 w-1/5" id="save-percentage"></input>
+                        <p class="font-bold">%</p>
+                        <button class="bg-blue-600 text-white font-semibold rounded-sm py-2 px-10"
+                            id="save-btn">Save</button>
 
                     </div>
 
-                    <h3 class="text-center font-semibold text-2xl mt-4">Saving Amount: <span></span></h3>
-                    <h3 class="text-center font-semibold text-2xl my-2">Remaining Balance: <span></span></h3>
+                    <h3 class="text-center font-semibold text-2xl mt-4">Saving Amount: <span id="saving-amount"></span>
+                    </h3>
+                    <h3 class="text-center font-semibold text-2xl my-2">Remaining Balance: <span
+                            id="remaining-balance"></span></h3>
                 </div>
             </div>
         </section>
